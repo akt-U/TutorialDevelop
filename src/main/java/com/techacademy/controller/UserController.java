@@ -61,8 +61,6 @@ public class UserController {
     public String getUser(@PathVariable("id") Integer id, Model model) {
         if(id != null) {
             model.addAttribute("user", service.getUser(id));
-        }else {
-
         }
 
         // User更新画面に遷移
